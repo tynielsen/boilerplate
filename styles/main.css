@@ -1,0 +1,94 @@
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+  Skeleton scaffolding for CSS files
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1rem; /* 10px  - keep it simple */
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/* Global/Site-wide/Shared */
+header {}
+footer {}
+
+.wrapper {}
+.content {}
+
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.83rem;
+}
+
+h6 {
+  font-size: 0.67rem;
+}
+
+
+/* Forms */
+form {}
+
+
+/* Sections */
+section {}
+
+
+/* Pages */
+
