@@ -13,9 +13,14 @@
   <link rel="stylesheet" href="styles/main.css" />
 </head>
 <body>
-  <div class="wrapper">
+  <div class="wrapper"> <!-- Not super stoked about this; body should suffice. -->
     <header></header>
-    <main></main>
+    <main> <!-- Semantically correct, keep. Especially if accessibility is something on your radar. -->
+      <pre><code class="language-css">p { color: red }</code></pre>
+      <p>HTML5 requires a simple document type declaration like below for code and pre html tags to work.</p>
+      <pre><code class="language-html">&lt;! DOCTYPE html&gt;</code></pre>
+
+    </main>
     <footer></footer>
   </div>
 
