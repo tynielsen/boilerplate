@@ -3,24 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="" />
-  <meta name="description" content="" />
+  <meta name="author" content="Tyler Nielsen" />
+  <meta name="description" content="HTML, CSS, JavaScript Boilerplate. This is the basic setup for a website, during your project's infancy. This will get projects up and sprinting real quick-like." />
 
-  <title></title>
+  <title>Your Website's First Steps!</title>
 
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="stylesheet" href="styles/prism.css" />
+  <link rel="stylesheet" href="styles/prism.min.css" />
+  <link rel="stylesheet" href="styles/reset.css" />
   <link rel="stylesheet" href="styles/main.css" />
+
+
 </head>
 <body>
   <div class="wrapper"> <!-- Not super stoked about this; body should suffice. -->
-    <header></header>
-    <main> <!-- Semantically correct, keep. Especially if accessibility is something on your radar. -->
-      <pre><code class="language-css">p { color: red }</code></pre>
-      <p>HTML5 requires a simple document type declaration like below for code and pre html tags to work.</p>
-      <pre><code class="language-html">&lt;! DOCTYPE html&gt;</code></pre>
+    <header>
+      Website Boilerplate: The basics with some common layout styles.
 
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main"> <!-- Semantically correct, keep. Especially if accessibility is something on your radar. -->
+      <pre><code class="language-css">p { color: red }</code></pre>
+
+      <p>HTML5 requires a simple document type declaration like below for code and pre html tags to work.</p>
+
+      <pre><code class="language-html">&lt;! DOCTYPE html&gt;</code></pre>
+      <p>CSS3/Sass &amp; beyond!</p>
+      <pre>
+        <code class="language-css codeblock">
+        :root {
+          --primary-color: blue;
+          --secondary-color: yellow;
+          --highlight-color: light magenta;
+        }
+        </code>
+      </pre>
     </main>
+
     <footer></footer>
   </div>
 

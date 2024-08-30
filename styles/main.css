@@ -54,27 +54,40 @@ p {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.17rem;
+  font-size: 1.5rem;
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 h5 {
-  font-size: 0.83rem;
+  font-size: 1.17rem;
 }
 
 h6 {
-  font-size: 0.67rem;
+  font-size: 0.83rem;
+}
+
+/* Code Blocks */
+pre {
+  display: inline-block;
+}
+
+code {
+  display: inline-block;
+}
+
+code.codeblock {
+  width: auto;
 }
 
 
@@ -83,8 +96,12 @@ form {}
 
 
 /* Sections */
-section {}
+section {
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 1)
+}
 
 
 /* Pages */
-
+.about {}
+.contact-us {}
