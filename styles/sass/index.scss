@@ -1,38 +1,14 @@
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-  Skeleton scaffolding for CSS files
+Skeleton scaffolding for CSS files
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+@use 'typography';
 
-/* Reset */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
+/* ronin styles */
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-size: 1rem; /* 10px  - keep it simple */
 }
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
 
 /* Global/Site-wide/Shared */
 header {}
@@ -42,48 +18,13 @@ footer {}
 .content {}
 
 
-/* Typography */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  overflow-wrap: break-word;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1.125rem;
-}
-
-h5 {
-  font-size: 1.17rem;
-}
-
-h6 {
-  font-size: 0.83rem;
-}
-
 /* Code Blocks */
 pre {
   display: inline-block;
 }
 
 code {
-  display: inline-block;
+  display: block;
 }
 
 code.codeblock {
@@ -91,17 +32,9 @@ code.codeblock {
 }
 
 
-/* Forms */
-form {}
-
-
 /* Sections */
 section {
   border-radius: 0.5rem;
-  border: 1px solid rgba(0, 0, 0, 1)
+  border: 1px solid rgba(0, 0, 0, 1);
 }
 
-
-/* Pages */
-.about {}
-.contact-us {}
