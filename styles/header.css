@@ -1,0 +1,16 @@
+/* ————————————————————————————————————————————————————————————————————————————
+  Header @Styles
+———————————————————————————————————————————————————————————————————————————— */
+header {
+  background-color: rgba(144, 46, 187, 1);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+  color: #EEEB27;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+
+  .container {
+    padding: 2.5rem 1rem;
+    width: 1024px;
+  }
+}

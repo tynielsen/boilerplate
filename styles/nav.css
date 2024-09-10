@@ -1,0 +1,18 @@
+/* ————————————————————————————————————————————————————————————————————————————
+  Navigation @Styles
+———————————————————————————————————————————————————————————————————————————— */
+nav {
+  max-width: 34%;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+
+      a {}
+    }
+  }
+}

@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="Tyler Nielsen" />
   <meta name="description"
     content="HTML, CSS, JavaScript Boilerplate. This is the basic setup for a website, during your project's infancy. This will get projects up and sprinting real quick-like." />
+  <meta name="keywords" content="Web, Development, HTML, CSS, JavaScript, Front-End Development, Work Works">
 
-  <title>Your Website's First Steps!</title>
+  <title>Local Playground</title>
 
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <!-- <link rel="stylesheet" href="styles/prism.min.css" /> -->
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/devibeans.min.css" integrity="sha512-+tHv/KFkcjuA2bm+udAuNFE+QEV+WFBjiZaKXj0YqoGyC6wn+5PWU2SOfex9CUivuJIIuigTsJr1Re38gxSulw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles/reset.css" />
   <link rel="stylesheet" href="styles/main.css" />
-
-
 </head>
-
 <body>
   <div class="wrapper"> <!-- Not super stoked about this; body should suffice. -->
     <header>
       <div class="container">
-        Website Boilerplate: The basics with some common layout styles.
+        <h1>
+          Website Boilerplate: Well, More Of A Playground. All The Basics With Some Common Layout Styles.
+        </h1>
 
         <nav>
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#first-section">First Section</a></li>
+            <li><a href="#second-section">Second Section</a></li>
+            <li><a href="#third-section">Third Section</a></li>
           </ul>
         </nav>
       </div>
@@ -38,14 +36,28 @@
 
     <main role="main"> <!-- Semantically correct, keep. Especially if accessibility is something on your radar. -->
       <div class="content">
-      <pre><code class="css">p { color: red }</code></pre>
+        <section id="first-section">
+          <h2>Happy Halloween! Aren't Themes The Best?</h2>
+          <p>Yes, some of these color are not a11y WCAG compliant. Fortunately, you can change the theme to be high-contrast (in progress).</p>
+        </section>
 
-      <p>HTML5 requires a simple document type declaration like below for code and pre html tags to work.</p>
-      <pre><code class="html">&lt;!DOCTYPE html&gt;</code></pre>
+        <section id="second-section">
+          <h2>Pure CSS</h2>
+          <p>Just a few of the newest updates to CSS. Not Sass or any other pre/post-processor, just plain ol' CSS!</p>
+          <p class="nin-logo">NI<span class="reverse-char">N</span></p>
+        </section>
+      
+        <section id="third-section">
 
-      <p>CSS3/Sass &amp; beyond!</p>
-      <pre>
-        <code class="scss">
+          <pre><code class="css">p { color: red }</code></pre>
+  
+          <p>HTML5 requires a simple document type declaration like below for code and pre html tags to work.</p>
+          <pre><code class="html">&lt;!DOCTYPE html&gt;</code></pre>
+  
+          <p>CSS3/Sass &amp; beyond!</p>
+          <pre>
+            <code class="css">
+/* Examples Of Some Of The Latest Additions To CSS */
 :root {
   --primary-color: blue;
   --secondary-color: yellow;
@@ -53,27 +65,32 @@
 }
 
 body {
-  color: hotpink;
+  color: var(--primary-color); /* CSS has variables by default?! Neato-Burrito! "Mmm, Burrito's" */
   background-color: slateblue;
   margin: 0 auto;
+}
+
+.wrapper {
+  width: clamp(768px, calc(100vw - 2rem), 1200px) /* Math functions: clamp(min-width, preferred-width, max-width) */
 }
 
 p {
   font-size: 1rem;
   color: #000000;
-  
+
   &:before {
-    content: 'blerp';
+    content: 'foo';
     display: block;
   }
 }
-        </code>
-      </pre>
-      </div>
+            </code>
+          </pre>
+        </section>
+      </div> <!--END div.content  -->
     </main>
 
     <footer>
-      <p>&copy; <span class="year"></span> Front-End Forge by MxTyler</p>
+      <p>&copy; <span class="year"></span> Front-End Forge by <a href="mxtyler.com">MxTyler.com</a></p>
     </footer>
   </div>
 
