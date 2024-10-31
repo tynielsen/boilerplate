@@ -2,10 +2,11 @@
   Header @Styles
 ———————————————————————————————————————————————————————————————————————————— */
 header {
-  background-color: rgba(144, 46, 187, 1);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
-  color: #EEEB27;
+  background-color: var(--bg3-halloween);
+  box-shadow: 0 4px 18px var(--shaddow-halloween);
+  color: var(--color1-halloween);
   position: fixed;
+  top: 0;
   width: 100vw;
   z-index: 1;
 

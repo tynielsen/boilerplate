@@ -1,0 +1,58 @@
+:root {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(224px + 2rem);
+
+  --bg1-light: rgba(255, 255, 255, 1);
+  --bg2-light: rgba(205, 205, 205, 1);
+  --bg3-light: rgba(155, 155, 155, 1);
+  --border-light: rgba(0, 0, 0, 1);
+  --shadow-light: rgba(0, 0, 0, 0.5);
+  --color1-light: #000000;
+
+  --bg1-dark: rgba(0, 0, 0, 1);
+  --bg2-dark: rgba(55, 55, 55, 1);
+  --bg3-dark: rgba(105, 105, 105, 1);
+  --border-dark: rgba(0, 0, 0, 1);
+  --shadow-dark: rgba(0, 0, 0, 0.5);
+  --color1-dark: #FFFFFF;
+
+  --bg1-halloween: rgba(244, 131, 27, 1);
+  --bg2-halloween: rgba(99, 195, 40, 0.67);
+  --bg3-halloween: rgba(144, 46, 187, 1);
+  --border-halloween: rgba(0, 0, 0, 1);
+  --shadow-halloween: rgba(0, 0, 0, 0.5);
+  --color1-halloween: #EEEB27;
+}
+
+@media(prefers-color-scheme: light) {
+  :root {
+    --bg1: var(--bg1-light);
+    --bg2: var(--bg2-light);
+    --bg3: var(--bg3-light);
+    --border: var(--border-light);
+    --shadow: var(--shadow-light);
+    --color1: var(--color1-light);
+  }
+}
+
+@media(prefers-color-scheme: dark) {
+  :root {
+    --bg1: var(--bg1-dark);
+    --bg2: var(--bg2-dark);
+    --bg3: var(--bg3-dark);
+    --border: var(--border-dark);
+    --shadow: var(--shadow-dark);
+    --color1: var(--color1-dark);
+  }
+}
+
+@media(prefers-color-scheme: halloween) {
+  :root {
+    --bg1: var(--bg1-halloween);
+    --bg2: var(--bg2-halloween);
+    --bg3: var(--bg3-halloween);
+    --border: var(--border-halloween);
+    --shadow: var(--shadow-halloween);
+    --color1: var(--color1-halloween)
+  }
+}

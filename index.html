@@ -2,43 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Tyler Nielsen" />
-  <meta name="description"
-    content="HTML, CSS, JavaScript Boilerplate. This is the basic setup for a website, during your project's infancy. This will get projects up and sprinting real quick-like." />
+  <meta name="author" content="" />
+  <meta name="description" content="HTML, CSS, JavaScript Boilerplate. This is the basic setup for website via providing the architecture and content that you will want, during your project's infancy. This will get projects up and sprinting real quick-like." />
   <meta name="keywords" content="Web, Development, HTML, CSS, JavaScript, Front-End Development, Work Works">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Local Playground</title>
+  <title>Playground</title>
 
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/devibeans.min.css" integrity="sha512-+tHv/KFkcjuA2bm+udAuNFE+QEV+WFBjiZaKXj0YqoGyC6wn+5PWU2SOfex9CUivuJIIuigTsJr1Re38gxSulw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles/reset.css" />
   <link rel="stylesheet" href="styles/main.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+  <script src="scripts/index.js" defer></script>
 </head>
 <body>
-  <div class="wrapper"> <!-- Not super stoked about this; body should suffice. -->
-    <header>
-      <div class="container">
-        <h1>
-          Website Boilerplate: Well, More Of A Playground. All The Basics With Some Common Layout Styles.
-        </h1>
-
-        <nav>
-          <ul>
-            <li><a href="#first-section">First Section</a></li>
-            <li><a href="#second-section">Second Section</a></li>
-            <li><a href="#third-section">Third Section</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <div class="wrapper"> <!-- Not super stoked about this - I's call it optional. Check for `.wrapper` CSS in  -->
 
     <main role="main"> <!-- Semantically correct, keep. Especially if accessibility is something on your radar. -->
       <div class="content">
+        <header>
+          <div class="container">
+            <h1>
+              Website Boilerplate: Well, More Of A Playground. All The Basics With Some Common Layout Styles.
+            </h1>
+    
+            <nav>
+              <ul>
+                <li><a href="#first-section">First Section</a></li>
+                <li><a href="#second-section">Second Section</a></li>
+                <li><a href="#third-section">Third Section</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
         <section id="first-section">
           <h2>Happy Halloween! Aren't Themes The Best?</h2>
-          <p>Yes, some of these color are not a11y WCAG compliant. Fortunately, you can change the theme to be high-contrast (in progress).</p>
+          <p>Yes, some of these colors may not be WCAG compliant. Fortunately, themes exist and can be used to provide higher contrast a similar experience for everyone.</p>
         </section>
 
         <section id="second-section">
@@ -55,8 +59,7 @@
           <pre><code class="html">&lt;!DOCTYPE html&gt;</code></pre>
   
           <p>CSS3/Sass &amp; beyond!</p>
-          <pre>
-            <code class="css">
+          <pre><code class="css">
 /* Examples Of Some Of The Latest Additions To CSS */
 :root {
   --primary-color: blue;
@@ -83,8 +86,7 @@ p {
     display: block;
   }
 }
-            </code>
-          </pre>
+            </code></pre>
         </section>
       </div> <!--END div.content  -->
     </main>
@@ -93,9 +95,5 @@ p {
       <p>&copy; <span class="year"></span> Front-End Forge by <a href="mxtyler.com">MxTyler.com</a></p>
     </footer>
   </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
-  <script src="scripts/index.js"></script>
 </body>
 </html>
