@@ -5,7 +5,7 @@
 @import url("footer.css");
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-  Basic scaffolding — basic CSS
+  Global CSS
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
   background-color: var(--bg1-halloween);
@@ -31,7 +31,7 @@ body {
 
 
 /*
-  Global/Site-wide/Shared
+  NIN Logo
 */
 .nin-logo {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
