@@ -1,99 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="author" content="" />
-  <meta name="description" content="HTML, CSS, JavaScript Boilerplate. This is the basic setup for website via providing the architecture and content that you will want, during your project's infancy. This will get projects up and sprinting real quick-like." />
-  <meta name="keywords" content="Web, Development, HTML, CSS, JavaScript, Front-End Development, Work Works">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="MxTyler.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="Responsive website's built the right way: Your way.">
+  <meta name="description" content="HTML, CSS, JavaScript Boilerplate. This is the basic scaffolding for a responsive website. The architecture, styles, and content that will help, not confuse or complicate your app during its infancy. This will get your project up and sprinting real quick-like, like, real quick.">
 
-  <title>Playground</title>
+  <title>Welcome :: Responsive Website Boilerplate</title>
 
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/devibeans.min.css" integrity="sha512-+tHv/KFkcjuA2bm+udAuNFE+QEV+WFBjiZaKXj0YqoGyC6wn+5PWU2SOfex9CUivuJIIuigTsJr1Re38gxSulw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="styles/reset.css" />
-  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/devibeans.min.css" integrity="sha512-+tHv/KFkcjuA2bm+udAuNFE+QEV+WFBjiZaKXj0YqoGyC6wn+5PWU2SOfex9CUivuJIIuigTsJr1Re38gxSulw==" crossorigin="anonymous" referrerpolicy="no-referrer"> <!-- This provides styles for code examples -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/main.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script> <!-- This provides formatting for all languages in code examples -->
   <script src="scripts/index.js" defer></script>
 </head>
 <body>
-  <div class="wrapper"> <!-- Not super stoked about this - I's call it optional. Check for `.wrapper` CSS in  -->
+  <main role="main"> <!-- Semantically correct, keep. Especially if accessibility is something on your radar. -->
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <h1>
+            Responsive Website Boilerplate
+          </h1>
+  
+          <nav>
+            <ul>
+              <li><a href="#first-section">First</a></li>
+              <li><a href="#second-section">Second</a></li>
+              <li><a href="#third-section">Third</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-    <main role="main"> <!-- Semantically correct, keep. Especially if accessibility is something on your radar. -->
-      <div class="content">
-        <header>
-          <div class="container">
-            <h1>
-              Website Boilerplate: Well, More Of A Playground. All The Basics With Some Common Layout Styles.
-            </h1>
-    
-            <nav>
-              <ul>
-                <li><a href="#first-section">First Section</a></li>
-                <li><a href="#second-section">Second Section</a></li>
-                <li><a href="#third-section">Third Section</a></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
+      <section id="first-section">
+        <h2>Happy Hallowee… Thanksgiving! Aren't Themes The Best?</h2>
+        <p>Yes, some of these colors may not be WCAG compliant. Fortunately, themes exist and can be used to provide higher contrast a similar experience for everyone.</p>
+      </section>
 
-        <section id="first-section">
-          <h2>Happy Halloween! Aren't Themes The Best?</h2>
-          <p>Yes, some of these colors may not be WCAG compliant. Fortunately, themes exist and can be used to provide higher contrast a similar experience for everyone.</p>
+      <section id="second-section">
+        <h2>Create Anything, With Only HTML, CSS, &amp; Good Ol' JavaScript</h2>
+        <p>Just a few of the newest updates to CSS. Not Sass or any other pre/post-processor, library, framework or whatever. Just some extra tasty ultra CSS!</p>
+        <p class="nin-logo">NI<span class="reverse-char">N</span></p>
+      </section>
+
+      <section id="third-section">
+        <h2>Pure CSS — So Fresh &amp; So Clean!</h2>
+        <p>HTML5 requires a simple document type declaration like below for code and pre html tags to work.</p>
+        <pre><code class="html">&lt;!DOCTYPE html&gt;</code></pre>
+
+        <p>CSS3/Sass &amp; beyond!</p>
+        <p>With the latest CSS updates that have been released, applying styles are significantly easier, and have support from all modern browsers.</p>
+        <p>Here Are Some Examples:</p>
+        <pre><code class="css">
+/** *******************
+  Variables:
+******************** */
+::root {
+  --primary-color: hotpink;
+  --secondary-color: yellow;
+  --bg1: #00FF00;
+  --bg2: #000000;
+}
+
+/** *******************
+  Nesting:
+******************** */
+header {
+  background-color: var(--bg2);
+  color: var(--secondary-color);
+  
+  p { 
+    color: var(--secondary-color);
+  }
+}
+
+// Easy-to-use layout options exist now (for the past few years), so no more hacking floats…
+
+Flexbox!
+******************** */
+display: flex; // 'inline-flex', 'flexbox', 'inline-flexbox' are also available
+flex-direction: row;
+justify-content: flex-start;
+align-items: middle;
+
+…AND…
+
+/* Grid!
+******************** */
+display: grid; // 'inline-grid' is also available
+grid-template-columns: auto;
+grid-template-areas: 
+  "header header header header"
+  "nav main-content main-content main-content"
+  "footer footer footer footer";
+
+// Functions
+******************** */
+clamp(768px, 1024px, 1400px); // clamp takes 3 arguments: min-width, default/main-width, max-width
+
+// and a LOT more!
+        </code></pre>
         </section>
 
-        <section id="second-section">
-          <h2>Pure CSS</h2>
-          <p>Just a few of the newest updates to CSS. Not Sass or any other pre/post-processor, just plain ol' CSS!</p>
+        <section id="portfolio">
+          <h2>Portfolio</h2>
+          <p>Just a few of the newest updates to CSS. No Sass or any other pre/post-processor, just good ol' CSS!</p>
           <p class="nin-logo">NI<span class="reverse-char">N</span></p>
         </section>
       
-        <section id="third-section">
-
-          <pre><code class="css">p { color: red }</code></pre>
-  
-          <p>HTML5 requires a simple document type declaration like below for code and pre html tags to work.</p>
-          <pre><code class="html">&lt;!DOCTYPE html&gt;</code></pre>
-  
-          <p>CSS3/Sass &amp; beyond!</p>
-          <pre><code class="css">
-/* Examples Of Some Of The Latest Additions To CSS */
-:root {
-  --primary-color: blue;
-  --secondary-color: yellow;
-  --highlight-color: light magenta;
-}
-
-body {
-  color: var(--primary-color); /* CSS has variables by default?! Neato-Burrito! "Mmm, Burrito's" */
-  background-color: slateblue;
-  margin: 0 auto;
-}
-
-.wrapper {
-  width: clamp(768px, calc(100vw - 2rem), 1200px) /* Math functions: clamp(min-width, preferred-width, max-width) */
-}
-
-p {
-  font-size: 1rem;
-  color: #000000;
-
-  &:before {
-    content: 'foo';
-    display: block;
-  }
-}
-            </code></pre>
+        <section id="contact" class="contact-section">
+          <h2>Contact (eventually)</h2>
+          <ul>
+            <li>Email: <a href="mailto:tynielsen@gmail.com">tynielsen@gmail.com</a></li>
+            <li>Call: <a href="tel:18013615305">(801) 361-5305</a></li>
+            <li>Review My Resume: <a href="linkedin.com/in/tyler-nielsen">LinkedIn Profile</a></li>
+          </ul>
         </section>
       </div> <!--END div.content  -->
     </main>
 
-    <footer>
-      <p>&copy; <span class="year"></span> Front-End Forge by <a href="mxtyler.com">MxTyler.com</a></p>
-    </footer>
-  </div>
+  <footer>
+    <p>&copy; <span class="copyright-year"></span> Front-End Forge by <a href="mxtyler.com">MxTyler.com</a></p>
+  </footer>
 </body>
 </html>

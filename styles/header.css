@@ -2,16 +2,16 @@
   Header @Styles
 ———————————————————————————————————————————————————————————————————————————— */
 header {
-  background-color: var(--bg3-halloween);
-  box-shadow: 0 4px 18px var(--shaddow-halloween);
-  color: var(--color1-halloween);
-  position: fixed;
+  /* background-color: var(--bg3); */
+  background: url("../images/bg-section.png") top left repeat;
+  box-shadow: 0 4px 18px var(--shadow);
+  color: var(--color2);
+  position: sticky;
   top: 0;
-  width: 100vw;
   z-index: 1;
 
   .container {
-    padding: 2.5rem 1rem;
+    padding: 1.75rem 1rem 1rem;
     width: 1024px;
   }
 }
