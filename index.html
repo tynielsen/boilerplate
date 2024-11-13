@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="author" content="" />
+  <meta name="author" content="Tyler Nielsen" />
+  <meta name="title" content="Website's built the right way: Your way.">
   <meta name="description" content="HTML, CSS, JavaScript Boilerplate. This is the basic setup for website via providing the architecture and content that you will want, during your project's infancy. This will get projects up and sprinting real quick-like." />
-  <meta name="keywords" content="Web, Development, HTML, CSS, JavaScript, Front-End Development, Work Works">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Playground</title>
@@ -20,38 +20,39 @@
   <script src="scripts/index.js" defer></script>
 </head>
 <body>
-  <div class="wrapper"> <!-- Not super stoked about this - I's call it optional. Check for `.wrapper` CSS in  -->
-
-    <main role="main"> <!-- Semantically correct, keep. Especially if accessibility is something on your radar. -->
+  <div class="wrapper"> <!-- Not super stoked about this - I'd call it optional. Check for `.wrapper` CSS in  -->
+    <main role="main"> <!-- Semantically correct, keep. Especially if accessibility is something you're concerned about. -->
       <div class="content">
+        
         <header>
           <div class="container">
             <h1>
-              Website Boilerplate: Well, More Of A Playground. All The Basics With Some Common Layout Styles.
+              Responsive Website Boilerplate
             </h1>
     
             <nav>
               <ul>
-                <li><a href="#first-section">First Section</a></li>
-                <li><a href="#second-section">Second Section</a></li>
-                <li><a href="#third-section">Third Section</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#coding-standards">Coding Standards</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
           </div>
         </header>
 
-        <section id="first-section">
-          <h2>Happy Halloween! Aren't Themes The Best?</h2>
+        <section id="about">
+          <h2>About</h2>
+          <p>Well, This Serves as a Boilerplate AND a Playground. No Libraries. No Frameworks. Just the Basics With Some Common Layout Styles.</p>
           <p>Yes, some of these colors may not be WCAG compliant. Fortunately, themes exist and can be used to provide higher contrast a similar experience for everyone.</p>
         </section>
 
-        <section id="second-section">
-          <h2>Pure CSS</h2>
-          <p>Just a few of the newest updates to CSS. Not Sass or any other pre/post-processor, just plain ol' CSS!</p>
-          <p class="nin-logo">NI<span class="reverse-char">N</span></p>
-        </section>
-      
-        <section id="third-section">
+        <section id="coding-standards">
+          <h2>CSS Standards &amp; Best Practices</h2>
+          <p>Just a few of the newest updates to CSS. No Sass or any other pre/post-processor, just good ol' CSS!</p>
+          <div class="nin-logo" title="Band Logo for Nine Inch Nails"><span>NI</span><span class="reverse-char">N</span></div>
+
+          <p>With the latest, official CSS updates that have been released, modern browsers now support <pre><code class="css">variables, nesting</code></pre>, shorthand responsive options, excellent layout options with <pre><code class="css">flex and grid</code></pre>, <pre><code class="css">min(), max(), clamp()</code></pre>, and more!</p>
 
           <pre><code class="css">p { color: red }</code></pre>
   
@@ -62,24 +63,41 @@
           <pre><code class="css">
 /* Examples Of Some Of The Latest Additions To CSS */
 :root {
-  --primary-color: blue;
-  --secondary-color: yellow;
-  --highlight-color: light magenta;
+  --primary-color: slateblue;
+  --color1: #FAFAFA;
+  --color2: #0E0E0E;
+  --color3: hotpink;
+  --bg1: yellow;
+  --bg2: light magenta;
+  --border: --primary-color;
 }
 
 body {
   color: var(--primary-color); /* CSS has variables by default?! Neato-Burrito! "Mmm, Burrito's" */
-  background-color: slateblue;
+  background-color: var(--color2);
   margin: 0 auto;
 }
 
 .wrapper {
   width: clamp(768px, calc(100vw - 2rem), 1200px) /* Math functions: clamp(min-width, preferred-width, max-width) */
+
+  section {
+    background-color: var(--bg2);
+    border-radius: 0.5rem;
+    border: 1px solid var(--border);
+    margin: 2rem 2rem 0;
+    padding: 1rem;
+
+    a {
+      display: inline-block;
+      color: var(--color3);
+    }
+  }
 }
 
 p {
   font-size: 1rem;
-  color: #000000;
+  color: var(--color2);
 
   &:before {
     content: 'foo';
@@ -87,6 +105,23 @@ p {
   }
 }
             </code></pre>
+        </section>
+
+        <section id="portfolio">
+          <h2>Portfolio</h2>
+          <p>Just a few of the newest updates to CSS. No Sass or any other pre/post-processor, just good ol' CSS!</p>
+          <p class="nin-logo">NI<span class="reverse-char">N</span></p>
+
+          <p>With the latest, official CSS updates that have been released, modern browsers now support <pre><code class="css">variables, nesting</code></pre>, shorthand responsive options, excellent layout options with <pre><code class="css">flex and grid</code></pre>, <pre><code class="css">min(), max(), clamp()</code></pre>, and more!</p>
+        </section>
+      
+        <section id="contact" class="contact-section">
+          <h2>Contact (eventually)</h2>
+          <ul>
+            <li>Email: <a href="mailto:tynielsen@gmail.com">tynielsen@gmail.com</a></li>
+            <li>Call: <a href="tel:18013615305">(801) 361-5305</a></li>
+            <li>Review My Resume: <a href="linkedin.com/in/tyler-nielsen">LinkedIn Profile</a></li>
+          </ul>
         </section>
       </div> <!--END div.content  -->
     </main>
