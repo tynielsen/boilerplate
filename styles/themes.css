@@ -1,0 +1,33 @@
+:root {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(165px + 1rem);
+}
+
+.theme-seasonal {
+  --bg1: rgba(244, 131, 27, 1);
+  --bg2: rgba(99, 195, 40, 0.67);
+  --bg3: rgba(144, 46, 187, 1);
+  --border: rgba(0, 0, 0, 1);
+  --shadow: rgba(0, 0, 0, 0.5);
+  --color1: #EEEB27;
+}
+
+.theme-light {
+  --bg1: rgb(255, 254, 214);
+  --bg2: rgb(174, 203, 227);
+  --bg3: rgba(205, 205, 205, 1);
+  --border: #000;
+  --shadow: rgba(0, 0, 0, 0.5);
+  --color1: #000;
+  --color2: #FFF
+}
+
+.theme-dark {
+  --bg1: rgba(0, 0, 0, 1);
+  --bg2: rgba(55, 55, 55, 1);
+  --bg3: rgba(105, 105, 105, 1);
+  --border: #000;
+  --shadow: rgba(0, 0, 0, 0.5);
+  --color1: #FFF;
+  --color2: #000;
+}
