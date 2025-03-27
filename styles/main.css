@@ -1,4 +1,4 @@
-@import url("themes.css");
+@import url("theme-variables.css");
 @import url("typography.css");
 @import url("header.css");
 @import url("nav.css");
@@ -9,7 +9,9 @@
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
   background-color: var(--bg1);
-  font-size: 1rem;
+  color: var(--color1);
+  font-size: 1.25rem;
+  font-family: var(--font1), var(--font-fallback);
   line-height: 1.5;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
@@ -79,6 +81,10 @@ pre, code {
 
 pre {
   width: 100%;
+}
+
+pre + h2 {
+  margin-top: 5rem;
 }
 
 

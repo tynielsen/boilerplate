@@ -15,13 +15,13 @@
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js" defer></script>
   <script src="scripts/index.js" defer></script>
 </head>
 <body>
   <div class="wrapper"> <!-- Not super stoked about this - I'd call it optional. Check for `.wrapper` CSS in  -->
-    <main role="main"> <!-- Semantically correct, keep. Especially if accessibility is something you're concerned about. -->
+    <main role="main"> <!-- Semantically correct. KEEP. Especially if accessibility is something you're aware of and know how important it is. -->
       <div class="content">
         
         <header>
@@ -43,16 +43,22 @@
 
         <section id="about">
           <h2>About</h2>
-          <p>Well, This Serves as a Boilerplate AND a Playground. No Libraries. No Frameworks. Just the Basics With Some Common Layout Styles.</p>
-          <p>Yes, some of these colors may not be WCAG compliant. Fortunately, themes exist and can be used to provide higher contrast a similar experience for everyone.</p>
+          <p>Been doing this quite a while now, and I think I know what works best …for me. And I hope it works just as well for you.</p>
+          <p>Well, to be honest, this serves as BOTH a Boilerplate & Playground. No Libraries. No Frameworks, No Dependencies. Period. Just <u>the basics</u> with some common (and some not so common) layout styles. This does have a dependency for the code examples.</p>
+          <p>Yes, some of these colors may not be WCAG compliant. Fortunately, themes exist and can be used to ensure it does, in fact, provide the same experience for everyone by having a high-contrast theme, aka theme-dark, theme-light, theme-bazooka-joe.</p>
         </section>
 
         <section id="coding-standards">
           <h2>CSS Standards &amp; Best Practices</h2>
-          <p>Just a few of the newest updates to CSS. No Sass or any other pre/post-processor, just good ol' CSS!</p>
+          <p>Just a few of the newest updates to CSS. No Sass or any other CSS pre/post-processor, library, etc., just good ol' CSS using what CSS currently provides!</p>
           <div class="nin-logo" title="Band Logo for Nine Inch Nails"><span>NI</span><span class="reverse-char">N</span></div>
 
-          <p>With the latest, official CSS updates that have been released, modern browsers now support <pre><code class="css">variables, nesting</code></pre>, shorthand responsive options, excellent layout options with <pre><code class="css">flex and grid</code></pre>, <pre><code class="css">min(), max(), clamp()</code></pre>, and more!</p>
+          <p>With the latest, official CSS updates that have been released, modern browsers now support</p>
+          <pre><code class="css">variables, nesting</code></pre>
+          shorthand responsive options, excellent layout options with
+          <pre><code class="css">flex and grid</code></pre>
+          <pre><code class="css">min(), max(), clamp()</code></pre>
+          and more!</p>
 
           <pre><code class="css">p { color: red }</code></pre>
   
@@ -105,6 +111,30 @@ p {
   }
 }
             </code></pre>
+
+            <h2>JavaScript Standards &amp; Best Practices</h2>
+            <p>Same goes for JavaScript. There's no React or any other JS library, framework, etc. Just good ol' Vanilla JavaScript following the latest ECMAScript syntax and standards!</p>
+
+            <pre><code class="javascript">
+use strict;
+
+let name  = "Jebidiah";
+const x   = 3;
+
+// Arrow function w/three parameters.
+mutilate-by-pi = (param1, param2, param3) = {
+  return (param1 * param2 * (3 * param3));
+}
+
+// Clearer examples
+const hello = ["Hello", "how", "are", "you", "doing", "today?"];
+combineArray = (a1, a2) => {
+  return ();
+}
+
+
+            </code></pre>
+
         </section>
 
         <section id="portfolio">

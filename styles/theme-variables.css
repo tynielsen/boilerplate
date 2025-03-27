@@ -1,6 +1,8 @@
 :root {
   scroll-behavior: smooth;
   scroll-padding-top: calc(165px + 1rem);
+  --font1: "Trebuchet MS";
+  --font-fallback: "Tahoma", "Verdana", sans-serif;
 }
 
 .theme-seasonal {
